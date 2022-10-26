@@ -1,0 +1,100 @@
+.team-tap-wrapper {
+    padding: 0 2vw 0  2.8vw;
+}
+.team-tap-section {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #EAECF0;
+    /* border-top: 1px solid #EAECF0; */
+    padding: 2.8vw 0  2.8vw 0;
+}
+.team-tap-section:nth-child(1) .team-tap-left-section {
+    width: 64%;
+}
+.team-tap-section:nth-child(1)  .team-tap-right-section {
+    display: flex;
+    justify-content: flex-end;
+}
+.team-tap-section:nth-child(1)  .team-tap-right-section .primary-button {
+    margin-left: 0.8vw;
+
+}
+.team-tap-left-section{ 
+    width: 30%;
+}
+.team-tap-right-section {
+    width: 70%;
+}
+.team-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #344054;
+}
+.secondary-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #667085;
+}
+.team-tap-section:nth-child(1) .team-title {
+    font-weight: 600;
+    font-size: 16px;
+    color: #101828;
+    line-height: 24px;
+}
+
+.create-new-popup { 
+    width: 400px !important;
+   
+}
+.create-new-popup .ant-modal-content {
+    border-radius: 12px;
+}
+.create-new-popup .ant-modal-header {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 0;
+}
+
+.create-new-popup .ant-modal-header  .ant-modal-title  .modal-title {
+    font-weight: 500;
+    font-size: 18px;
+    color: #101828;
+    padding-bottom: 0.2vw;
+    margin-top: 0.8vw;
+}
+.create-new-popup .ant-modal-header  .ant-modal-title  .modal-desc {
+    font-weight: 400;
+    font-size: 14px;
+    color: #667085;
+}
+
+.create-new-popup .ant-modal-footer {
+    display: flex;
+    justify-content: center;
+    border: 0;
+    padding-bottom: 1.4vw;
+}
+.create-new-popup .ant-modal-footer  .ant-btn-primary {
+    background: #206DC5;
+    border: 1px solid #206DC5;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+   
+}
+.create-new-popup .ant-modal-footer  .ant-btn { 
+    border-radius: 8px;
+    width: 170px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 0.972vw;
+}
+.create-new-popup .ant-input-affix-wrapper {
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 8px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.create-new-popup .ant-input-affix-wrapper input {
+    border: 0 !important;
+}

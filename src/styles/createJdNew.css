@@ -1,0 +1,140 @@
+#createJobBanner{
+    margin-top: -13px;
+    height: 25vh;
+    background: linear-gradient(105.42deg, #1C5EAA 20.61%, #4698F6 116.17%);
+}
+
+#createJdContainer{
+    margin-top: -10vh;
+    padding: 0;
+}
+
+#mainBodyCard{
+    border-radius: 16px;
+}
+
+#createJdFormBody{
+    background: #F9FAFB;
+}
+
+#addManagerBtn{
+    width: 120px;
+    height: 40px;
+    background: #EAF3FE;
+    /* Primary/50 */
+    color: #185294;
+    border: 1px solid #EAF3FE;
+    /* Shadow/xs */
+    
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+}
+
+
+#addManagerBtn:hover{
+    background: #185294;
+    color: white;
+}
+
+    label:after {
+        content: "*";
+        color: red
+    }
+
+    .navBtn{
+        background: #206DC5;
+        /* Primary/600 */
+        color: white;
+        border: 1px solid #206DC5;
+        /* Shadow/xs */
+        width: 10vw;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+.createjdProgressContainer {
+    left: 0;
+    width: 100%;
+    height: 0.2em;
+    margin-bottom: 5px;
+
+    bottom: 0px;
+    overflow: hidden;
+    background-color: #fff;
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+
+.createJdProgressBar {
+    width: 0%;
+    float: left;
+    height: 100%;
+    z-index: 99;
+    max-width: 100%;
+    background-color: #206DC5;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+.uploadJdSubCards{
+    width: 35vw;
+    cursor: pointer;
+    border: 1px solid #F2F4F7;
+    /* Shadow/sm */
+    
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 6px rgba(16, 24, 40, 0.06);
+    border-radius: 12px;
+}
+
+.uploadJdSubCards:hover{
+    background: #61ABFF;
+    
+}
+
+
+.kiHXWb{
+    width: 37vw;
+}
+
+.cXBrtO{
+    font-size: 20px;
+    color: black;
+}
+
+.jobDescriptionText{
+    height: 13vh;
+}
+
+
+.chip {
+    color: white;
+        display: inline-block;
+        padding: 0px 12px;
+        height: 22px;
+        font-size: 15px;
+        line-height: 21px;
+        border-radius: 25px;
+        background-color: #206DC5;
+        margin-left: 5px;
+        margin-top: 5px;
+}
+
+
+.closebtn {
+    padding-left: 10px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: #000;
+}
+
+

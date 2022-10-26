@@ -1,0 +1,1126 @@
+.welcome-wrapper {
+    font-size: 52px;
+    line-height: 1.2;
+    padding-left: 130px;
+    color: #6b6868;
+    font-weight: 300;
+    opacity: 1;
+    animation: fadeOut 4.2s forwards;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    top: 200px;
+    span {
+        font-weight: bold;
+        font-size: 60px;
+        color: black;
+        margin-right: 14px;
+    }
+    .welcome-text-1 {
+       // top: -250%;
+        // position: absolute;
+        // opacity: 0;
+       // animation: moveBottom1 0.8s forwards;
+    }
+    .welcome-text-2 {
+        // top: -250%;
+        // position: absolute;
+        // opacity: 0;
+        // animation: moveBottom2 1.2s forwards;
+      //  animation-delay: 0s;
+    }
+    .welcome-text-3 {
+        // top: -250%;
+        // position: absolute;
+        // opacity: 0;
+        // animation: moveBottom3 1.4s forwards;
+        // animation-delay: 0.8s;
+    }
+
+    .welcome-text-3 {
+        margin-top: 35px;
+        display: flex;
+        align-items: flex-start;
+        line-height: 1;
+        svg {
+            // position: absolute;
+            transform: scale(100);
+            animation: zoomin 0.81s forwards;
+            animation-delay: 1.4s;
+            opacity: 0;
+        }
+    }
+}
+@keyframes fadeOut {
+    0% , 70%, 80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes toolbarAnimation {
+    0% {
+        top: -150px;
+    }
+    99% {
+        top: 0;
+    }
+    100% {
+       // position: sticky;
+        top: 0;
+    }
+    
+}
+
+@keyframes zoomin {
+    0% {
+        transform: scale(100);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes moveBottom1 {
+    0% {
+        top: -250%;
+        opacity: 0;
+    }
+    100% {
+        top: 25%;
+        opacity: 1;
+    }
+    0%, 70% {
+        opacity: 0;
+    }
+}
+@keyframes moveBottom2 {
+    0% {
+        top: -250%;
+        opacity: 0;
+    }
+    100% {
+        top: 32%;
+        opacity: 1;
+    }
+}
+@keyframes moveBottom3 {
+    0% {
+        top: -250%;
+        opacity: 0;
+    }
+    100% {
+        top: 38%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    0% , 90% {
+        opacity: 0;
+        overflow-y: hidden;
+    }
+    100% {
+        opacity: 1;
+      //  overflow-y: auto;
+    }
+}
+
+.public-landing-page {
+    box-sizing: border-box;
+    opacity: 0;
+    animation: fadein 4.2s forwards;
+    background-color: #F8FBFE;
+    height: 100vh;
+    //overflow-y: hidden;
+    //position: relative;
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 120px 32px 120px;
+        position: relative;
+        top: -150px;
+        transition: all 0.3s;
+        z-index: 1;
+        animation: toolbarAnimation 1s forwards;
+        animation-delay: 3.5s;
+        background-color: #F8FBFE;
+        // opacity: 1;
+        .hire-plus-logo {
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+           .company-title-wrapper {
+               position: absolute;
+               display: flex;
+               align-items: flex-end;
+               margin-left: 5px;
+               font-size: 11px;
+               left: 82px;
+               .company-title {
+                font-size: 13px;
+                margin-left: 5px;
+                font-weight: bold;
+                span {
+                    color:#206DC5
+                }
+               }
+           }
+        }
+       .back-cover {
+           position: absolute;
+           width: 100%;
+           height: 100%;
+           background-color: #F8FBFE;
+          // opacity: 0.5;
+           z-index: -1;
+           top: 0;
+           left: 0;
+       }
+        .right-section {
+            display: flex;
+            .nav-menu {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-left: 32px;
+              //  font-weight: 500;
+                font-size: 13px;
+                cursor: pointer;
+                height: 33px;
+                color: grey;
+                &.login-option {
+                  //  width: 83px;
+                //  height: 44px;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                   // margin-left: 82px;
+                   background: #EAF3FE;
+                   /* Primary/50 */
+                   
+                   border: 1px solid #EAF3FE;
+                   color: #185294;
+                    border-radius: 8px;
+                    a {
+                        color: #185294;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    .buble-wrapper {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        width: 441px;
+        z-index: -1;
+        span {
+            display: block;
+            width: 7px;
+            height: 7px;
+            background-color: #F2F4F7;
+            border-radius: 50%;
+            margin-right: 16px;
+            margin-bottom: 16px;
+        }
+    }
+
+    .first-section {
+        display: flex;
+        padding-left: 120px;
+        padding-right: 120px;
+        margin-top: 55px;
+        .get-start-button {
+            width: 128px;
+            height: 48px;
+            background: #206DC5;
+            border: 1px solid #206DC5;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 24px;
+            cursor: pointer;
+            a {
+                color: #FFFFFF;
+            }
+        }
+        .left-section {
+            width: calc(100% - 600px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           .buble-wrapper {
+               left: -92px;
+               top: 68px;
+           }
+            .header-text {
+                font-weight: 600;
+                font-size: 60px;
+               // letter-spacing: -0.02em;
+                color: #101828;
+                line-height: 1.25;
+                display: block;
+           //     width: 0px;
+               // white-space: nowrap;
+                overflow: hidden;
+                margin: 0;
+              //  animation: typing 7s steps(40) forwards;
+                &.text-1{
+                  //  animation-delay: 4s;
+                  //  max-width: 600px;
+                }
+                &.text-2{
+                  //  animation-delay: 6.5s;
+                    max-width: 440px;
+                }
+                &.text-3{
+                    // animation-delay: 8.5s;
+                    // max-width: 350px;
+                }
+            }
+            .sub-text {
+                font-weight: 400;
+                font-size: 16px;
+                color: #475467;                ;
+                margin-top: 18px;
+            }
+        }
+        .right-section {
+            position: relative;
+           // background-image: url("../assets/landingPageImage/image\ 8.png");
+            background-image: url("../assets//landingPageImage/Home\ Pic.png");
+            background-repeat: no-repeat;
+            background-size:  461.05px 274.36px;
+            background-color: white;
+            background-position: center;
+            box-shadow: 0px 4px 12px rgba(80, 97, 130, 0.16);
+            border-radius: 13.8902px;
+            width: 590.33px;
+            height: 398.18px;
+
+            .circle {
+                position: absolute;
+                left: -58px;
+                z-index: -1;
+            }
+            .oval {
+                position: absolute;
+                right: 60px;
+                bottom: -79.57px;
+                z-index: -1;
+            }
+        }
+    }
+    .second-section {
+        background-color: #F2F8FE;
+        padding: 33px 120px;
+        margin-top: 90px;
+        position: relative;
+        .buble-wrapper{
+            z-index: 0;
+            top: 30px;
+            right: 0;
+            span {
+               background-color:  #C7EEFF;
+               opacity: 0.2 
+            }
+        }
+        .section-title {
+            font-weight: 600;
+            font-size: 48px;
+           // letter-spacing: -0.02em;
+            color: #101828; 
+            margin-bottom: 10px;
+        }
+        .section-desc {
+            font-weight: 400;
+            font-size: 20px;
+            color: #F2F4F7; 
+                margin-bottom: 33px;
+        }
+        .cards-wrapper {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .registration-type-card {
+            // width: 383px;
+            // height: 516px;
+            width: 285px;
+            height: 460px;
+            padding: 20px;
+            padding-top: 0px;
+            background: #FFFFFF;
+            transition: all 0.2s;
+            box-shadow: 0px 0px 3px rgba(16, 24, 40, 0.1), 0px 0px 6px rgba(16, 24, 40, 0.06);
+            border-radius: 16px;
+            .top-section {
+                width: 343px;
+                height: 240px;
+                border-radius: 8px;
+               // background-color: lightblue;
+               &.candidate {
+                    background-image: url("../assets/landingPageImage/Image\ \(1\).png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                &.recruiter {
+                    background-image: url("../assets/landingPageImage/Image\ \(2\).png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                &.expert {
+                    background-image: url("../assets/landingPageImage/Image\ \(3\).png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+            .botton-section {
+               // margin-top: 33px;
+                .card-title{
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: #101828;
+                    line-height: 1.3;
+                    margin-top: 20px;
+                }
+                .card-desc {
+                    font-size: 16px;
+                    color: #667085;
+                    margin-top: 12px;
+                }
+                .registration-button {
+                    margin-top: 33px;
+                    padding: 12px 20px;
+                    height: 48px;
+                    background: #206DC5;
+                    border: 1px solid #206DC5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    border-radius: 8px; 
+                    a {
+                        color: #FFFFFF;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        svg {
+                            position: relative;
+                            top: -1px;
+                        }
+                    }
+                }
+            }
+        }
+        .registration-type-card:last-child {
+            margin-right: 0;
+        }
+        .registration-type-card:hover{
+          //  box-shadow: 0px 0px 5px #2888F6;
+            transform: scale(1.03);
+            transition: all 0.2s;
+        }
+    }
+    .text-blue {
+        color: #2888F6;
+    }
+    .footer-section {
+        background: #475467;
+        // height: 380px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 60px 120px;
+        padding-right: 70px;
+        padding-bottom: 21px;
+        overflow: hidden;
+        background-image: url("../assets/landingPageImage/plusplus.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        .left-section {
+            // width: 45%;
+            font-weight: 400;
+            font-size: 12px;
+            color: white;
+            .company-title{
+                font-size: 24px;
+                font-weight: 500;
+                letter-spacing: 1.1px;
+            }
+            .social-media-section {
+                margin-top: 20px;
+                svg {
+                    margin-right: 24px;
+                }
+            }
+           
+
+        }
+        .right-section {
+            display: flex;
+        }
+        .sub-section {
+            width: 160px;
+        }
+        .sub-section-title {
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+        .sub-section-option {
+            color: #FFFFFF;
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 12px;
+            cursor: pointer;
+        }
+        .copy-right {
+            display: block;
+            width: 100%;
+            text-align: right;
+            color: #FFFFFF;
+            font-weight: 400;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .welcome-wrapper {
+        font-size: 27px;
+        padding-left: 20px;
+        .welcome-text-3 {
+            margin-top: 15px;
+            display: flex;
+            align-items: flex-start;
+            line-height: 1;
+            span {
+                font-size: 32px;
+                margin-right: 10px;
+               
+            }
+            svg {
+                width: 82px !important;
+                height: 32px !important;
+            }
+        }
+    }
+    .public-landing-page  {
+        .topbar {
+            padding-left: 0;
+            padding-right: 12px;
+            .hire-plus-logo {
+                display: block;
+                svg {
+                    width: 92px !important;
+                    height: 31px !important;
+                }
+                .company-title-wrapper {
+                    left: 7px;
+                }
+            }
+            .nav-menu {
+                font-size: 13px !important;
+                margin-left: 17px !important;
+                display: flex;
+                align-items: center;
+            }
+            .right-section .nav-menu.login-option {
+                margin-left: 0;
+                width: 69px;
+                height: unset !important;
+            }
+        }
+        .first-section {
+            padding-right: 12px;
+            padding-left: 12px;
+            position: relative;
+            .buble-wrapper {
+                width: unset !important;
+                top: 50px !important;
+            }
+            .left-section {
+                width: 100% !important;
+                .header-text {
+                    font-size: 31px;
+                    br:nth-child(1) {
+                        display: none !important;
+                    }
+                    &.text-1{
+                      //  max-width: 325px;
+                    }
+                    &.text-2{
+                        // animation-delay: 3s;
+                        // max-width: 230px;
+                    }
+                    &.text-3{
+                        // animation-delay: 5s;
+                        // max-width: 180px;
+                    }
+                }
+                .sub-text {
+                    font-size: 13px;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+            .right-section {
+                display: none;
+            }
+            .get-start-button {
+                width: 104px;
+                height: 39px;
+                font-size: 13px;
+            }
+        }
+        .second-section  {
+            overflow: hidden;
+            padding: 13px;
+            padding-top: 33px;
+            margin-top: 51px;
+            .section-title {
+                font-size: 31px;
+            }
+            .section-desc {
+                font-size: 13px;
+            }
+            .cards-wrapper {
+                gap: 10px;
+                .registration-type-card {
+                    width: 303px;
+                    height: 450px;
+                    margin-right: 0px;
+                    justify-content: center;
+                    .top-section {
+                        width: 265px;
+                        height: 179px;
+                    }
+                    .botton-section{
+                        margin-top: 22px;
+                        .card-title {
+                            font-size: 22px;
+                        }
+                        .card-desc {
+                            font-size: 14px;
+                        }
+                        .registration-button {
+                            margin-top: 24px;
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-section {
+            padding: 47px 37px;
+            padding-right: 37px;
+            .left-section {
+                font-size: 12px;
+                .company-title{
+                    font-size: 24px;
+                }
+                .social-media-section {
+                    margin-top: 20px;
+                    margin-bottom: 25px;
+                    svg {
+                        margin-right: 24px;
+                    }
+                }
+            }
+            .right-section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .sub-section {
+                width: 160px;
+                margin-bottom: 20px;
+            }
+            .sub-section-title {
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            .sub-section-option {
+                font-size: 14px;
+                margin-bottom: 12px;
+            }
+            .copy-right {
+                font-size: 12px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 280px) {
+    .public-landing-page  {
+        .topbar {
+            padding-left: 0;
+            padding-right: 10px;
+            .hire-plus-logo {
+                display: block;
+                .company-title-wrapper {
+                    left: 7px;
+                }
+               svg {
+                width: 92px !important;
+                height: 31px !important;
+               }
+            }
+            .nav-menu {
+                font-size: 11px !important;
+                margin-left: 12px !important;
+                display: flex;
+                align-items: center;
+            }
+            .right-section .nav-menu.login-option {
+                margin-left: 0;
+                width: 59px;
+                height: unset !important;
+            }
+        }
+        .first-section {
+            padding-right: 10px;
+            padding-left: 10px;
+            .buble-wrapper {
+                width: unset !important;
+                top: 13px !important;
+            }
+            .left-section {
+                width: 100% !important;
+                .header-text {
+                    font-size: 25px;
+                    br:nth-child(1) {
+                        display: none !important;
+                    }
+                    // &.text-1{
+                    //     max-width: 260px;
+                    // }
+                    // &.text-2{
+                    //     animation-delay: 3.5s;
+                    //     max-width: 185px;
+                    // }
+                    // &.text-3{
+                    //     animation-delay: 6s;
+                    //     max-width: 144px;
+                    // }
+                }
+                .sub-text {
+                    font-size: 11px;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+            .right-section {
+                display: none;
+            }
+            .get-start-button {
+                width: 88px;
+                height: 29px;
+                font-size: 11px;
+            }
+        }
+        .second-section  {
+            overflow: hidden;
+            padding: 13px;
+            padding-top: 33px;
+            margin-top: 51px;
+            .section-title {
+                font-size: 25px;
+            }
+            .section-desc {
+                font-size: 12px;
+            }
+            .cards-wrapper {
+                gap: 10px;
+                .registration-type-card {
+                    height: 369px;
+                    margin-right: 0px;
+                    justify-content: center;
+                    .top-section {
+                        width: 216px;
+                        height: 139px;
+                    }
+                    .botton-section{
+                        margin-top: 20px;
+                        .card-title {
+                            font-size: 18px;
+                        }
+                        .card-desc {
+                            font-size: 12px;
+                        }
+                        .registration-button {
+                            margin-top: 22px;
+                            font-size: 11px;
+                            padding: 10px 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-section {
+            padding: 47px 37px;
+            padding-right: 37px;
+            .left-section {
+                font-size: 12px;
+                .company-title{
+                    font-size: 24px;
+                }
+                .social-media-section {
+                    margin-top: 20px;
+                    margin-bottom: 25px;
+                    svg {
+                        margin-right: 24px;
+                    }
+                }
+            }
+            .right-section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .sub-section {
+                width: 160px;
+                margin-bottom: 20px;
+            }
+            .sub-section-title {
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            .sub-section-option {
+                font-size: 14px;
+                margin-bottom: 12px;
+            }
+            .copy-right {
+                font-size: 12px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .welcome-wrapper {
+        font-size: 56px;
+        padding-left: 70px;
+        .welcome-text-3 {
+            margin-top: 15px;
+            display: flex;
+            align-items: flex-start;
+            line-height: 1;
+            span {
+                font-size: 62px;
+                margin-right: 10px;
+               
+            }
+            svg {
+                width: 120px !important;
+                height: 62px !important;
+            }
+        }
+    }
+    .public-landing-page  {
+        .topbar {
+            padding-left: 0;
+            padding-right: 12px;
+            .hire-plus-logo {
+                display: block;
+                padding-left: 11px;
+                .company-title-wrapper {
+                    left: 7px;
+                }
+            }
+            .nav-menu {
+                font-size: 14px !important;
+                margin-left: 25px !important;
+                display: flex;
+                align-items: center;
+            }
+            .right-section .nav-menu.login-option {
+                margin-left: 0;
+               // width: 69px;
+              //  height: unset !important;
+            }
+        }
+        .first-section  {
+            padding-left: 12px;
+            margin-top: 0;
+            padding-right: 10px;
+            .left-section {
+                width: calc(100% - 428px) !important;
+                .header-text {
+                    font-size: 38px;
+                    // &.text-1{
+                    //     max-width: 390px;
+                    // }
+                    // &.text-2{
+                    //     animation-delay: 3s;
+                    //     max-width: 290px;
+                    // }
+                    // &.text-3{
+                    //     animation-delay: 5s;
+                    //     max-width:240px;
+                    // }
+                }
+                .sub-text {
+                    font-size: 15px;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+            .right-section {
+                z-index: unset !important;
+                height: 278.18px;
+                background-size: 384.05px 223.36px;
+                width: 409px;
+                right: 11px;
+                .oval{
+                    bottom: 59.43px;
+                }
+            }
+        }
+        .first-section .right-section{
+            position: absolute;
+            z-index: -1;
+            width: 409px;
+            right: 11px;
+        }
+        .second-section  {
+            overflow: hidden;
+            padding: 13px;
+            padding-top: 33px;
+            margin-top: 51px;
+            .section-title {
+                font-size: 31px;
+            }
+            .section-desc {
+                font-size: 13px;
+            }
+            .cards-wrapper {
+                gap: 35px;
+                .registration-type-card {
+                    width: 303px;
+                    height: 450px;
+                    margin-right: 0px;
+                    justify-content: center;
+                    .top-section {
+                        width: 265px;
+                        height: 179px;
+                    }
+                    .botton-section{
+                        margin-top: 22px;
+                        .card-title {
+                            font-size: 22px;
+                        }
+                        .card-desc {
+                            font-size: 14px;
+                        }
+                        .registration-button {
+                            margin-top: 24px;
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-section {
+            padding: 47px 37px;
+            padding-right: 37px;
+            .left-section {
+                font-size: 12px;
+                .company-title{
+                    font-size: 24px;
+                }
+                .social-media-section {
+                    margin-top: 20px;
+                    margin-bottom: 25px;
+                    svg {
+                        margin-right: 24px;
+                    }
+                }
+            }
+            .right-section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .sub-section {
+                width: 160px;
+                margin-bottom: 20px;
+            }
+            .sub-section-title {
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            .sub-section-option {
+                font-size: 14px;
+                margin-bottom: 12px;
+            }
+            .copy-right {
+                font-size: 12px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+@media (min-width: 1025px) and (max-width: 1280px){
+    .welcome-wrapper {
+        font-size: 56px;
+        padding-left: 70px;
+        .welcome-text-3 {
+            margin-top: 15px;
+            display: flex;
+            align-items: flex-start;
+            line-height: 1;
+            span {
+                font-size: 62px;
+                margin-right: 10px;
+               
+            }
+            svg {
+                width: 120px !important;
+                height: 62px !important;
+            }
+        }
+    }
+    .public-landing-page  {
+        .topbar {
+            padding-left: 40px;
+            padding-right: 45px;
+            .hire-plus-logo {
+               // display: block;
+                // padding-left: 10px;
+                // .company-title-wrapper {
+                //     left: 7px;
+                // }
+            }
+            .nav-menu {
+                font-size: 18px !important;
+                margin-left: 25px !important;
+                display: flex;
+                align-items: center;
+            }
+            .right-section .nav-menu.login-option {
+                margin-left: 59px !important;
+                width: 89px;
+                height: unset !important;
+            }
+        }
+        .first-section  {
+            padding-left: 42px;
+            margin-top: 20px;
+            .left-section {
+                width: calc(100% - 528px) !important;
+                .header-text {
+                    font-size: 48px;
+                    // &.text-1{
+                    //     max-width: 490px;
+                    // }
+                    // &.text-2{
+                    //     animation-delay: 3s;
+                    //     max-width: 350px;
+                    // }
+                    // &.text-3{
+                    //     animation-delay: 5s;
+                    //     max-width:280px;
+                    // }
+                }
+                .sub-text {
+                    font-size: 18px;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+            .right-section{
+                z-index: unset !important;
+                .oval{
+                    bottom: -12px;
+                }
+            }
+        }
+        .first-section .right-section{
+            position: absolute;
+            z-index: -1;
+            width: 528px;
+            right: 45px;
+            height: 307.18px;
+            background-size: 429.05px 244.36px;
+        }
+        .second-section  {
+            overflow: hidden;
+            padding: 13px;
+            padding-top: 33px;
+            margin-top: 51px;
+            .section-title {
+                font-size: 31px;
+                padding-left: 42px;
+            }
+            .section-desc {
+                font-size: 13px;
+                padding-left: 42px;
+            }
+            .cards-wrapper {
+                gap: 35px;
+                .registration-type-card {
+                    width: 303px;
+                    height: 450px;
+                    margin-right: 0px;
+                    justify-content: center;
+                    .top-section {
+                        width: 265px;
+                        height: 179px;
+                    }
+                    .botton-section{
+                        margin-top: 22px;
+                        .card-title {
+                            font-size: 22px;
+                        }
+                        .card-desc {
+                            font-size: 14px;
+                        }
+                        .registration-button {
+                            margin-top: 24px;
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes typing {
+    0%{
+        border-right: 1px solid black;
+    }
+    70%{
+        border-right: 1px solid transparent;
+    }
+    40%, 60%, 100%{
+      width: calc(100% + 5px);
+    }
+}

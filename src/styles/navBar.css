@@ -1,0 +1,76 @@
+.navLogo {
+    height: 20px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+#offcanvasNavbar {
+    background-color: #0A0A0A;
+}
+
+
+.nav-link:hover {
+    background-color: #FF6700;
+}
+
+.offcanvas-start {
+    width: 275px;
+}
+
+.navbar-toggler-icon {
+    width: 1.1em;
+    height: 1.1em;
+}
+
+.navbar-toggler {
+    padding: 3px;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 15rem;
+    border: 2px solid black;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus {
+    color: black;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#blitzigoLogoDark{
+        height: 28px;
+        width: 65px;
+}
+
+.navLinks{
+    text-decoration: none;
+}
+
+.navLinks :hover{
+    color: white;
+}
+
+.sidebarIcons{
+    margin-left: 5px;
+}

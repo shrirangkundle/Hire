@@ -1,0 +1,122 @@
+.reviewCandidateCard{
+    background: #206DC5;
+    border-radius: 9px;
+    color:white;
+    height: 39vh;
+}
+
+.reviewCandidateText{
+    color: white;
+}
+
+.candidateOverflowCard{
+    height: 72vh;
+    overflow: scroll;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.scoreProgress{
+    width: 6.3vw;
+    text-align: center;
+}
+
+.resumeCard{
+    height: 72vh;
+    overflow: scroll;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.viewJdStandBy{
+        height: 5vh;
+        /* width: 9vh; */
+        /* margin-top: 5px; */
+        padding-top: 5px;
+        margin-left: 5px;
+        /* margin-right: 5px; */
+}
+
+.viewJdStandBy:hover{
+    background: #206DC5;
+    color: white;
+}
+
+.tags-input-container {
+   
+    background: white;
+    /* border: 2px solid #000; */
+    padding-left: .5em;
+    border-radius: 3px;
+    /* width: min(80vw, 600px); */
+    margin-top: 1em;
+    /* display: flex; */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5em;
+}
+
+.ant-checkbox-wrapper{
+    color:black
+}
+
+.candidateReviewAction{
+    border-radius: 8px;
+    width: 8vw;
+    margin-left: 10px;
+}
+
+.tag-item {
+    background-color: #EFF8FF;
+    display: inline-block;
+    padding: .5em .75em;
+    border-radius: 20px;
+    color: #206DC5;
+}
+
+.tag-item .close {
+    height: 20px;
+    width: 20px;
+    /* background-color: rgb(48, 48, 48); */
+    color: #667085;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .5em;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.tags-input {
+    /* flex-grow: 1; */
+    /* padding: .5em 0; */
+    width: 17vw;
+    border: none;
+    outline: none;
+    color: black;
+}
+
+.chipCandidateReview{
+    color: white;
+    display: inline-block;
+    padding: 0px 12px;
+    height: 22px;
+    font-size: 15px;
+    line-height: 21px;
+    border-radius: 25px;
+    background-color: #206DC5;
+    margin-left: 5px;
+    margin-top: 10px;
+  
+
+}
+
+.candidateReviewGrey{
+    background-color: #F9FAFB;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+}
+.candidateIntermediateCard{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+

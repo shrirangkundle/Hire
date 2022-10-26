@@ -1,0 +1,31 @@
+.incentive-page-wrapper {
+    padding: 2vw 2.5vw;
+}
+.incentive-section {
+    border-bottom: 1px solid #EAECF0;
+    margin-bottom: 2.4vw;
+}
+.incentive-page-wrapper .incentive-section:last-child {
+    border-bottom: 0;
+}
+
+.incentive-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #344054;
+}
+.incentive-desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #667085;
+    margin-bottom: 2vw;
+}
+.incentive-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+.incentive-button-wrapper button:last-child {
+    margin-left: 0.9vw;
+}

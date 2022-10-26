@@ -1,0 +1,412 @@
+.scheduler-page-wrapper {
+    padding: 0 24px 0 24px;
+    .date-range-wrapper {
+        display: flex;
+        margin-bottom: 12px;
+        .date-range {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 16px;
+            // width: 86px;
+            height: 40px;
+            background: #FFFFFF;
+            border: 1px solid #D0D5DD;
+            border-right: 0;
+            color: #D0D5DD;
+            cursor: pointer;
+        }
+        .date-range:nth-child(1){
+            border-radius: 8px 0px 0px 8px;
+        }
+        .date-range:last-child {
+            border-radius: 0px 8px 8px 0px;
+            border-right:  1px solid #D0D5DD;
+        }
+        .date-range[data-status="true"] {
+            color: #344054;
+        }
+    }
+  
+    .scheduler-page {
+        display: flex;
+        .calender-panel {
+            width: 70%;
+        }
+        .detail-panel {
+            width: 30%;
+            position: sticky;
+            top: 0;
+            padding: 0 10px 0 10px;
+            .detail-block {
+                border: 1px solid #F9FAFB;
+                /* Shadow/sm */
+                box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 6px rgba(16, 24, 40, 0.06);
+                border-radius: 8px;
+                padding: 15px;
+                margin-bottom: 12px;
+            }
+            .title {
+                font-weight: 500;
+                font-size: 15px;
+                color: #101828;
+            }
+            .desc {
+                font-weight: 400;
+                font-size: 12px;
+                color: #667085;
+                margin-bottom: 16px;
+            }
+            .ant-picker {
+                width: 100%;
+                height: 40px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+            .button-wrapper {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 8px;
+            }
+            .slot-button {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 16px;
+                // width: 190px;
+                height: 40px;
+                background: #206DC5;
+                border: 1px solid #206DC5;
+                // box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                border-radius: 8px;
+                font-weight: 500;
+                font-size: 14px;
+                color: #FFFFFF;
+                position: relative;
+                cursor: pointer;
+            }
+            .slot-button:active{
+                top: 1px;
+            }
+            .color-indicator {
+                width: 22px;
+                height: 22px;
+                border-radius: 4px;
+                margin-right: 18px;
+                position: relative;
+                top: 10px;
+            }
+            .c-slot-available {
+                background: #A9CFFB;
+            }
+            .slot-available { 
+                background: #2888F6;
+            }
+            .interview-booked { 
+                background: #51449F;
+            }
+            .empty-slot { 
+                background: white;
+                border: 1px solid #D0D5DD;
+            }
+            .slot-confirmed{
+                background: #039855;
+            }
+            .slot-booked {
+                background: #206DC5;
+            }
+            .slot-canceled {
+                background: #667085;
+            }
+
+            .push-notification {
+               
+            }
+        }
+    }
+
+    .ant-table {
+        border: 1px solid rgb(16 24 40 / 10%);
+        // box-shadow: -2px 1px 3px rgb(16 24 40 / 10%);
+        .ant-table-thead {
+            .ant-table-cell {
+                background-color: white;
+                color: #101828 !important;
+                font-weight: bolder;
+                font-size: 12px;
+                border-right: 1px solid rgb(16 24 40 / 10%);
+            }
+
+            // .ant-table-cell:nth-child(1) {
+            //     border-right: 0;
+            // }
+            // .ant-table-cell:nth-child(2) {
+            //     border-left:  1px solid rgb(16 24 40 / 10%);;
+            // }
+        }
+        .ant-table-tbody {
+            tr {
+                td {
+                    border-right: 1px solid rgb(16 24 40 / 10%);
+                    position: relative;
+                    padding: 0;
+                    .divider {
+                        height: 1px;
+                        width: 100%;
+                        border-top: 1px dotted #D0D5DD;
+                        position: absolute;
+                        top: 60%;
+                        left: -14px;
+                    }
+                }
+                td:nth-child(1) {
+                    position: relative;
+                    .time {
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        color: #101828;
+                        font-weight: bolder;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .job-overview {
+        background: #F2F4F7;
+        border-radius: 8px;
+        height: 88px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        >div {
+            padding-left: 40px;
+        }
+        .job-title {
+            font-weight: 500;
+            font-size: 14px;
+            color: #2888F6;
+        }
+        .job-desc {
+            font-weight: 500;
+            font-size: 16px;
+            color: #185294;
+        }
+    }
+    .candidate-overview {
+        margin-bottom: 15px;
+    }
+    .text-bold {
+        font-weight: 500;
+        font-size: 14px;
+        color: #101828;
+    }
+    .booked-cell {
+        // background: #A9CFFB;
+        background: #e1eaf6;
+        border: 3px solid #A9CFFB;
+        border-left: 8px solid #A9CFFB;
+
+        border-radius: 4px;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 13px;
+        color: #101828;
+        &[data-cell-type="ACCEPTED"] {
+            background: #c2f8e0;
+            border: 3px solid #039855;
+            border-left: 8px solid #039855;
+        }
+        &[data-cell-type="BOOKED" ]{
+            background: #3d91f1;;
+            border: 3px solid #206DC5;
+            border-left: 8px solid #206DC5;
+            color: white;
+        }
+
+        // &[data-cell-type="ACCEPTED"]{
+        //     background:  #206DC5;
+        //     border: 3px solid  #206DC5;
+        //     border-left: 8px solid  #206DC5;
+        //     color: white;
+        // }
+        &[data-cell-type="CANCELLED"]{
+            background:  #8c94a4;
+            border: 3px solid  #667085;
+            border-left: 8px solid  #667085;
+            color: white;
+            text-decoration: line-through;
+            // font-style: ;
+        }
+       
+    }
+    .open-cell {
+        // background: #A9CFFB;
+        background: #c2f8e0;
+        border: 3px solid #039855;
+        border-left: 8px solid #039855;
+
+        border-radius: 4px;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 13px;
+        color: #101828;
+        &[data-cell-type="BOOKED"] {
+            background: #9685f5;
+            border: 3px solid #51449F;
+            border-left: 8px solid #51449F;
+            color: white;
+        }
+        &[data-cell-type="ACCEPTED"]{
+            background:  #206DC5;
+            border: 3px solid  #206DC5;
+            border-left: 8px solid  #206DC5;
+            color: white;
+        }
+        &[data-cell-type="CANCELLED"]{
+            background:  #8c94a4;
+            border: 3px solid  #667085;
+            border-left: 8px solid  #667085;
+            color: white;
+            text-decoration: line-through;
+            // font-style: ;
+        }
+    }
+   
+    .tag {
+        text-align: left;
+        height: 22px;
+        border-radius: 16px;
+        margin-bottom: 1px;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: fit-content;
+        &::before{
+            content: "";
+            width: 10px;
+            height: 10px;
+           // border: 1px solid black;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+    }
+    .book-tag {
+        color: black;
+        background: #A9CFFB;
+        &::before{
+            border: 1px solid black;
+        }
+    }
+    .booked-tag {
+        color: white;
+        background: #185294;
+        &::before{
+            border: 1px solid white;
+        }
+    }
+    .confirmed-tag {
+        color: white;
+        background: #039855;
+        &::before{
+            border: 1px solid white;
+        }
+    }
+    .canceled-tag {
+        color: white;
+        background: #667085;
+        &::before{
+            border: 1px solid white;
+        }
+    }
+}
+.admin-scheduler {
+    .detail-panel{
+        width: 25% !important;
+       .detail-block {
+            box-shadow: none !important;
+            border: none !important;
+            padding: 0 !important;
+       }
+    }
+    .calender-panel {
+        width: 75% !important;
+    }
+    .panelist-list-wrapper {
+        background-color:  #F2F4F7;
+        padding: 10px;
+        padding-top: 30px;
+        .ant-input-affix-wrapper {
+            border-radius: 8px !important;
+            margin-bottom: 10px;
+        }
+        .panelist-list-section { 
+            .panelist {
+                display: flex;
+                align-items: center;
+                height: 40px;
+                width: 100%;
+                background: #FFFFFF;
+                border-radius: 6px;
+                margin-bottom: 6px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-weight: 500;
+                color: #344054;
+                .panelist-image {
+                    width: 24px;
+                    height: 24px;
+                    background-color: grey;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+            }
+            .panelist:hover {
+                background-color: #EAF3FE;
+                cursor: pointer;
+            }
+            .panelist[data-status="true"] {
+                background-color: #EAF3FE;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+.join-meeting-button {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    background-color: #206DC5;
+    color: white;
+    width: 300px;
+    height: 44px;
+    border: 1px solid #206DC5;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    >svg {
+        margin-right: 10px;
+    }
+}

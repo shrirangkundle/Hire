@@ -1,0 +1,103 @@
+.recuiter-profile-page {
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+   
+}
+.recuiter-profile-page .recruiter-profile-section {
+    background: #fff;
+    display: flex;
+    padding: 0.833vw;
+    padding-right: 2vw;
+    justify-content: space-between;
+}
+.recuiter-profile-page .right-section .section {
+    display: flex;
+    align-items: center;
+}
+.recuiter-profile-page .right-section .section .profile-pic {
+    width: 10.555vw;
+    height: 10.555vw;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin-right: 0.833vw;
+}
+
+.recuiter-profile-page .right-section .section .title {
+    font-weight: 500;
+    font-size: 2.083vw;
+    color: #101828;
+}
+
+.recuiter-profile-page .right-section .section .email {
+    font-weight: 400;
+    font-size: 1.111vw;
+    color: #667085;
+}
+.recuiter-profile-page  .left-section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.recuiter-profile-page .left-section .button-wrapper {
+    display: flex;
+}
+.recuiter-profile-page .left-section button {
+    margin-left: 0.347vw;
+}
+button[class*="primary-button"]{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6944vw 1.111vw;
+    min-width:   4.5138vw;
+    height: 2.777vw;
+    background: #206DC5;
+    border: 0.069vw solid #206DC5;
+    font-weight: 500;
+    font-size: 0.972vw;
+    box-shadow: 0 0.069vw 0.138vw rgba(16, 24, 40, 0.05);
+    border-radius: 0.55555vw;
+    color: #FFFFFF;
+}
+button[class*="primary-button-shadow"]{
+    background: #EAF3FE !important;
+    border: 1px solid #EAF3FE !important;
+    color: #185294;
+    font-weight: 500;
+    width: 77px;
+    height: 36px;
+}
+
+button[class*="cancle-button"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.69444vw 1.111vw;
+    gap: 0.555vw;
+    min-width: 5.486111vw;
+    font-weight: 500;
+    font-size:  0.972222vw;
+    height: 2.777vw;
+    color: #344054;
+    background: #FFFFFF;
+    border: 0.0694vw solid #D0D5DD;
+    box-shadow: 0 0.0694vw 0.13888vw rgba(16, 24, 40, 0.05);
+    border-radius: 0.555vw;
+}
+button[class*="primary-button"][disabled] ,button[class*="cancle-button"][disabled]{
+    background-color: lightgray;
+    color: white;
+    cursor: not-allowed;
+    border: 0.0694vw solid #D0D5DD;
+    pointer-events: none;
+}
+.recuiter-profile-page .left-section .close-button {
+    color: #185294;
+    font-size: 1.25vw;
+    font-weight: bold;
+    cursor: pointer;
+}

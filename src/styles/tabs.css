@@ -1,0 +1,21 @@
+.tab-wrapper {
+    display: flex;
+    padding:  0.83333vw;
+    border-bottom: 0.06944vw solid #EAECF0;
+    padding-bottom: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+.tab-wrapper .tab {
+    padding: 0.83333vw 0.9722vw;
+    border-bottom: 0.138vw solid white;
+    min-width:  6.94444vw;
+    font-size:  1.1111vw;
+    text-align: center;
+}
+.tab-wrapper .tab[data-tab-status="true"] {
+    border-bottom: 0.1388vw solid #185294;
+    background-color: #EAF3FE;
+}

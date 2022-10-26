@@ -1,0 +1,152 @@
+#finalInterviewCard {
+    background: linear-gradient(120.78deg, #185294 16.56%, rgba(24, 82, 148, 0.64) 170.11%);
+    /* Shadow/sm-down */
+    
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 6px rgba(16, 24, 40, 0.06);
+    border-radius: 8px;
+    color: White;
+}
+#finalInterviewCard h4{
+ 
+    color: White;
+}
+
+#finalInterviewCard p {
+
+    color: White;
+}
+input[type=file]::file-selector-button {
+/* display: flex; */
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 8px;
+
+width: 124px;
+height: 30px;
+
+
+background: #cfe4ff;
+
+border: 1px solid #EAF3FE;
+
+
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+border-radius: 8px;
+
+}
+
+input[type=file]::file-selector-button:hover {
+    background: hsl(214, 100%, 85%);
+
+}
+
+#finalInterviewTimeCard{
+    background: #667085;
+    border-radius: 8px;
+}
+#finalInterviewTimeCard h4{
+    color: white;
+}
+
+#finalInterviewTimeCard p {
+    color: white;
+}
+
+#quesManagerParentDiv{
+    background: #F2F8FE;
+}
+
+.quesManagerCard{
+    background: #FFFFFF;
+    /* lg */
+    
+    box-shadow: 0px 4px 16px -4px rgba(16, 24, 40, 0.08),
+    0px 0px 6px -2px rgba(16, 24, 40, 0.08);
+    border-radius: 12px;
+}
+
+.addQues{
+    width: 240px;
+    height: 50px;
+    
+    /* Primary/50 */
+    
+    background: #EAF3FE;
+    /* Primary/50 */
+    
+    border: 1px solid #EAF3FE;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 28px;
+    gap: 12px;
+    color: #185294;
+    margin-top:15px
+}
+
+.scheduleInterview {
+    width: 150px;
+    height: 30px;
+    
+    /* Primary/50 */
+
+    background: #EAF3FE;
+    /* Primary/50 */
+
+    border: 1px solid #EAF3FE;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 28px;
+    gap: 12px;
+    color: #185294;
+    
+}
+
+.scheduleInterview:hover{
+    background: #c4dcfa;
+    cursor:pointer
+}
+
+.addQues:hover{
+    background: #c4dcfa;
+    cursor:pointer
+
+}
+
+.quesBodyFinal{
+    margin-top:10px ;
+    background: #F9FAFB;
+    /* Shadow/md-down */
+    
+    box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.1),
+    0px 2px 4px -2px rgba(16, 24, 40, 0.12);
+    border-radius: 8px;
+}
+
+.quesAddBtn{
+    width: 160px;
+    height: 30px;
+    background: #EAF3FE;
+    border: 1px solid #EAF3FE;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 28px;
+    gap: 12px;
+    color: #185294;
+
+
+}
+
+.quesAddBtn:hover{
+    cursor: pointer;
+}

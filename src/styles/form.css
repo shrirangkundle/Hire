@@ -1,0 +1,89 @@
+.form-component {
+
+}
+.form-component .form-body-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form-component .form-body-wrapper .field input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    padding: 10px 14px;
+}
+.form-component .form-body-wrapper .field {
+    margin-bottom: 24px;
+}
+.form-component .form-body-wrapper .field .ant-input-affix-wrapper {
+    border: 0;
+}
+.form-component .form-body-wrapper .field .ant-input-affix-wrapper .ant-input-affix-wrapper:focus {
+    box-shadow: none !important;
+}
+.form-component .form-body-wrapper .field .field-label {
+    font-weight: 500;
+    font-size: 13px;
+    color: #344054;
+    margin-bottom: 6px;
+    min-width: 162px;
+    display: flex;
+    align-items: center;
+}
+.form-component .field .switch-display {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.ant-input-affix-wrapper-disabled {
+    background-color: transparent !important;
+}
+.ant-input-affix-wrapper-disabled input{
+background-color: #f5f5f5 !important;
+}
+
+.form-body-wrapper .ant-input-affix-wrapper{
+    padding: 0;
+}
+.form-body-wrapper .ant-input-affix-wrapper:focus, .form-body-wrapper .ant-input-affix-wrapper-focused {
+    box-shadow: none;
+}
+.ant-input-password {
+    border: 1px solid #D0D5DD !important;
+    border-radius: 8px !important;
+    padding-right: 11px !important;
+}
+.ant-input-password input {
+    border: 0 !important;
+}
+.form-body-wrapper>.field[data-validated="false"] input, 
+.form-body-wrapper>.field[data-validated="false"] .ant-input-password,
+.form-body-wrapper>.field[data-validated="false"] .ant-select-selector {
+    border-color: red !important;
+}
+.form-body-wrapper .ant-select-selector {
+    height: 46px !important;
+    border-radius: 8px !important;
+}
+.ant-select-selection-placeholder, .ant-select-selection-item {
+    display: flex !important;
+    align-items: center !important;
+}
+.password-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.password-footer .remeber-me .ant-checkbox-wrapper{
+    color: black;
+
+}
+.password-footer .forgot-password {
+    color: red;
+    cursor: pointer;
+    
+}
+/* .form-body-wrapper>.field[data-validated="false"] .ant-input-password {
+
+} */

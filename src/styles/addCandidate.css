@@ -1,0 +1,39 @@
+.addCandidateCards{
+    background: #F9FAFB;
+    /* Gray/200 */
+    
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+    
+}
+
+#addCandidateList{
+    background: #F2F8FE;
+    height: 84.1vh;
+    overflow: scroll;
+}
+
+.addCandidateBtn{
+    width: 5vw;
+    /* margin-left: 10px; */
+    background: #206DC5;
+}
+
+.addCandidateBtn:hover{
+    background: rgb(11 67 132);
+}
+
+.addCandidateInput{
+    margin-top: -8px;
+    margin-bottom: 4px;
+}
+
+.candidateListCard{
+    margin-bottom: 10px;
+    color: white;
+    background: #103662;
+}
+
+.addCandidateUploadCard{
+    border-radius: 20px;
+}

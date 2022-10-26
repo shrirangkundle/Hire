@@ -1,0 +1,89 @@
+.scheduler-popover {
+    width: 300px;
+    .popover-title {
+        font-weight: 500;
+        font-size: 18px;
+        color: #101828;
+        margin-bottom: 6px;
+    }
+    .label {
+        font-weight: 500;
+        font-size: 14px;
+        color: #344054;
+        margin-bottom: 4px;
+    }
+    >.ant-picker{ 
+        height: 36px;
+        width: 280px;
+        background: #EAECF0;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    .ant-select {
+        height: 39px;
+        .ant-select-selector {
+            border-radius: 8px;
+            // margin-bottom: 10px;
+            // height: 36px;
+        }
+        // background: #EAECF0;
+       
+    }
+    .ant-checkbox-wrapper {
+        font-size: 14px;
+        margin-bottom: 8px;
+        margin-top: 6px;
+    }
+    textarea {
+        background: #FFFFFF;
+        border: 1px solid #D0D5DD;
+        border-radius: 8px;
+    }
+   
+    .primary-button, .cancle-button, .primary-button-shadow {
+        margin-left: 8px;
+        width: 118px;
+    }
+    // .primary-button-shadow {
+    //     background: #EAF3FE !important;
+    //     border: 1px solid #EAF3FE !important;
+    // }
+
+    .time-wrapper {
+        display: flex;
+        align-items: center;
+        background: #EAECF0;
+        border-radius: 8px;
+        height: 35px;
+        border: 1px solid #d9d9d9;
+        position: relative;
+        margin-bottom: 10px;
+        .seperator {
+            margin-right: 14px;
+        }
+        >span[role="img"] {
+            position: absolute;
+            right: 11px;
+            color: rgba(0, 0, 0, 0.25);
+        }
+    // margin-bottom: 10px;
+        .ant-input-number  {
+            background: transparent;
+            width: 50px;
+            border: 0;
+        }
+        .input-field {
+            background: transparent;
+            width: 25px;
+            padding-right: 0;
+            // padding: 0;
+            border: 0;
+        }
+        .ant-input-number:focus , .ant-input:focus, .ant-input-number-focused{ 
+            box-shadow: none;
+        }
+    }
+}
+.ant-popover-arrow {
+  //  display: none;
+}

@@ -1,0 +1,44 @@
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.userType{
+    width: 100%;
+}
+
+#hirePPLogoLogin{
+    width: 17%;
+    margin-left: 20px;
+
+}
+#hirePPImageResponsive{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+.center-fit {
+  display: none;
+}
+#hirePPLogoLogin{
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 35%;
+}
+.hppResponsive{
+    display: none;
+}
+
+    
+    #hirePPImageResponsive {
+        display: block;
+    }
+}

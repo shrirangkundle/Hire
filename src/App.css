@@ -1,0 +1,47 @@
+body{
+  margin: 0;
+  /* font-family: 'Roboto',
+  sans-serif; */
+  font-family: 'inter', sans-serif;
+}
+
+
+.hirePlusPlusPageContent {
+  display: flex;
+  height: 100vh;
+  overflow-y: hidden;
+
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.coming-soon {
+ /* background-image: url("./assets/comingSoon.jpeg"); */
+  width: 98%;
+  height: 90vh;
+  margin: 0 auto;
+  /* color: white; */
+  font-size: 34px;  
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: radial-gradient(62.79% 62.79% at 50% 37.21%, #F5F5F5 2.06%, #2888F6 48.68%, #185294 89.09%); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.hirePlusPlusPageContainer{
+  padding: 1vw;
+}
+
+.card-body{
+  padding-top: 5px;
+  padding-bottom: 0px;
+}

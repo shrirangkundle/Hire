@@ -1,0 +1,32 @@
+.ant-table-tbody > tr > td, .ant-table-thead > tr > th  {
+    font-size: 13px;
+    color: #667085 !important;
+}
+.ant-table-tbody > tr > td {
+    color: #667085;
+}
+.ant-table-cell .ant-tag{
+    border-radius: 8px;
+
+}
+.ant-table-tbody > tr > td > .multi-display-wrapper > div:nth-child(2) > div:nth-child(1) {
+    color: #101828;
+    font-size: 14px;
+    font-weight: 500;
+}
+.ant-checkbox-inner  {
+    border-radius: 6px;
+}
+.ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    display: none;
+}
+.ant-table-column-sorter-inner .active {
+    border-right:unset !important;
+    background: unset !important;
+}
+.ant-table-thead .ant-table-cell svg {
+    position: relative;
+    top: -2px;
+    margin-left: 5px;
+    cursor: pointer;
+}

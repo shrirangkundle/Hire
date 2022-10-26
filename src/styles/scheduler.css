@@ -1,0 +1,18 @@
+.slotindicator{
+    height:2em;
+}
+
+
+.interviewReminderText {
+    color: #B42318;
+}
+
+.schedulingDetailsCard{
+    background: linear-gradient(90deg, #206DC5 0%, #2888F6 100%);
+    border-radius: 8px;
+    color: white;
+}
+
+#hirePPScheduler{
+    height: 100vh;
+}
