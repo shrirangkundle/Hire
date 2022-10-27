@@ -1,56 +1,60 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import UplaodImg from './cloud2.svg';
+import UplaodImg from "./cloud2.svg";
 // import "./dragDrop.css";
 import "../../styles/addMultipleCandidate.css";
 import { Input } from "antd";
 import "antd/dist/antd.css";
 import { LinkOutlined } from "@ant-design/icons";
+import WebUtils from "../../WebUtils";
+import hirePPBaseURl from "../../assets/envVar/baseUrl";
+import PropTypes from "prop-types";
 
 function DragandDropModal(props) {
   const wrapperRef = useRef(null);
   const inputRef = useRef(null);
-  const [formData,setFormData] = useState({});
+  const [formData, setFormData] = useState({});
   const [uploadFile, setUploadFile] = useState("");
-
-  const [fileList, setFileList] = useState([]);
-
-  const onDragEnter = () => wrapperRef.current.classList.add("dragover");
-
-  const onDragLeave = () => wrapperRef.current.classList.remove("dragover");
-
-  const onDrop = () => wrapperRef.current.classList.remove("dragover");
+  const [bulkResume, setBulkResume] = useState({});
 
   const handleFileReader = (event) => {
     let reader = new FileReader();
-    reader.readAsDataURL(event.target.files[0]);
-    reader.onload = (e) => {
-      setUploadFile(e.target.result);
-    };
+    // reader.readAsDataURL(event.target.files[0]);
+    // setBulkResume(event.target.files[0]);
+    // reader.onload = (e) => {
+    //   setUploadFile(e.target.result);
+    // };
+    // apiCall();
+    // console.log(event.target.files[0]);
+    // console.log(event.target.files[0].name);
+    // var hello = reader.readAsDataURL(event.target.files[0]);
+    // console.log(hello);
+    // console.log(typeof hello);
+    console.log(event.target.files[0]);
+    setBulkResume(event.target.files[0]);
   };
 
-  const onFileDrop = (e) => {
-    const newFile = e.target.files[0];
-    const fileType = newFile.type;
-    // console.log("file type " + fileType);
-    if (
-      fileType ===
-      "zip,application/octet-stream,application/zip,application/x-zip,application/x-zip-compressed"
-    ) {
-      // console.log("condition met");
-      // const updatedList = [...fileList, newFile]; add multiple files at once.
-      const updatedList = [newFile];
-      setFileList(updatedList);
-      props.onFileChange(updatedList);
-    } else {
-      alert("Please only upload zip file");
-      return;
-    }
+  const apiCall = () => {
+    console.log("func coming here");
+    var FormData = require("form-data");
+    var formData = new FormData();
+    formData.append("bulkZipFile", bulkResume);
+    const newurl = `${hirePPBaseURl}/resume/bulkUpload?jdId=JD_SE1666764512`;
+
+    WebUtils.httpOperations(newurl, formData, "POST").then(
+      (response) => {
+        console.log(response);
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
   };
+
   return (
     <Modal
       {...props}
@@ -116,7 +120,7 @@ function DragandDropModal(props) {
                 className="fs-7 fw-semibold mb-0"
                 style={{ cursor: "pointer" }}
               >
-                Uplaod folder
+                Upload folder
               </label>
             </Col>
           </Row>
@@ -144,7 +148,7 @@ function DragandDropModal(props) {
                 className="fs-7 fw-semibold mb-0"
                 style={{ cursor: "pointer" }}
               >
-                select file
+                Select file
               </label>
             </Col>
           </Row>
@@ -171,7 +175,7 @@ function DragandDropModal(props) {
                 className="fs-7 fw-semibold mb-0"
                 style={{ cursor: "pointer" }}
               >
-                upload .zip Folder
+                Upload .zip file
               </label>
             </Col>
           </Row>
@@ -239,6 +243,7 @@ function DragandDropModal(props) {
                   border: "1px solid #A9CFFB",
                   boxShadow: "0px 1px 2px rgba(16, 24, 40, 0.05)",
                 }}
+                onClick={apiCall}
               >
                 Next
               </Button>

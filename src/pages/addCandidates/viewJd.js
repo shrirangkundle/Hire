@@ -32,7 +32,8 @@ import eraseLocalStorage from "../../assets/eraseLocalStorage";
 import SkillAddComponent from "../../components/viewJd/SkillWeightageModal";
 import hirePPBaseURlScheduler from "../../assets/envVar/baseUrlScheduler";
 import Alert from "react-bootstrap/Alert";
-import AddMultipleCandidate from './addMultipleCandidate';
+import AddMultipleCandidate from "./addMultipleCandidate";
+// import "../../styles/addMultipleCandidate.css";
 
 var JdHTML_text =
   '<!DOCTYPE html><html lang="en"> <head> <meta charset="UTF-8"/> <meta http-equiv="X-UA-Compatible" content="IE=edge"/> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <title>Document</title> </head> <body> <h3>Loading</h3> </body></html>';
@@ -957,21 +958,19 @@ function ViewJd(props) {
   const NoCandidateAdded = () => {
     return (
       <>
-        <Container fluid className="hire_bulk_container mt-3 pb-3">
+        <Container fluid className="hire_bulk_container mt-2">
           <Col md={12} className="d-flex justify-content-center">
-            <Link to={`/addCandidate/${jobId}`}>
-              <img src={addCandidateNew} style={{ height: "100px" }} alt="" />
-            </Link>
+            <img src={addCandidateNew} style={{ height: "100px" }} alt="" />
           </Col>
           <Col md={12} className="d-flex justify-content-center">
-            <h1 className="mb-2">Start adding candidates</h1>
+            <h2 className="mb-2">Start adding candidates</h2>
           </Col>
           <Col md={12} className="d-flex justify-content-center">
-            <p style={{ color: "#667085" }} className="fs-5">
+            <p style={{ color: "#667085" }}>
               You will see list after adding your candidates
             </p>
           </Col>
-          <Row className=" p-4 pt-2 m-auto  w-75 ">
+          <Row className="p-3 pt-1 m-auto  w-75 ">
             <Col
               sm={12}
               md={6}
@@ -980,15 +979,16 @@ function ViewJd(props) {
             >
               <Card className="w-100 m-auto pt-4 pb-4 hire_bulk_col_card ">
                 <Card.Body className="pl-4 pr-4">
-                  <Card.Title className="fs-3 fw-semibold">
-                    Uplaod in Bulk
-                  </Card.Title>
+                  {/* <Card.Title className="fs-3 fw-semibold">
+                    
+                  </Card.Title> */}
+                  <h4>Upload in Bulk</h4>
                   <Card.Text className="fs-6" style={{ color: "#667085" }}>
                     we support <span className="fw-bold">.zip files </span> only
                   </Card.Text>
                   <Button
                     onClick={() => setModalShow(true)}
-                    variant=" w-100 fs-5  mt-2"
+                    variant=" w-100 fs-5  mt-1"
                     className="hire_bulk_button_multiple"
                   >
                     <svg
@@ -1017,16 +1017,17 @@ function ViewJd(props) {
             >
               <Card className="w-100 m-auto pt-4 pb-4 hire_bulk_col_card">
                 <Card.Body className="pl-4 pr-4">
-                  <Card.Title className="fs-3 fw-semibold">
-                    Uplaod 1 Resume
-                  </Card.Title>
+                  {/* <Card.Title className="fs-3 fw-semibold">
+                    Upload 1 Resume
+                  </Card.Title> */}
+                  <h4>Upload 1 Resume</h4>
                   <Card.Text className="fs-6" style={{ color: "#667085" }}>
                     we support{" "}
                     <span className="fw-bold">.pdf, .doc, and more</span>
                   </Card.Text>
                   <Link to={`/addCandidate/${jobId}`}>
                     <Button
-                      variant=" w-100 fs-5  mt-2"
+                      variant=" w-100 fs-5  mt-1"
                       className="hire_bulk_button_single"
                     >
                       <svg
